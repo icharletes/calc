@@ -26,12 +26,13 @@ body{
     max-width: 1200px;
     width: 100%;
     margin:0 auto;
-    background-color: #FBFBFB;
+
 }
 
 .calc-form{
     display: flex;
     width: 100%;
+    margin-top: 50px;
 }
 
 .calc_items-left{
@@ -182,9 +183,67 @@ body{
 }
 
 
-
-
-
 ::placeholder{
     font-family: 'Montserrat', sans-serif;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.bottom-claim{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.bottom-claim h2{
+    color: #0484DE;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.bottom-claim h2 span{
+    font-size: 1.2rem;
+    display: block;
+}
+
+.bottom-claim_icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bottom-claim_icons{
+    text-align: center;
+}
+
+.bottom-claim_icons .ico img{
+    width: 110px;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .bottom-claim_icons{
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+@media (min-width:992px){
+
+    .bottom-claim_icons {
+        margin-top: 50px;
+    }
+    .bottom-claim_icons .ico img{
+        width: 140px;
+    }
+
+    .bottom-claim h2{
+        font-size: 1.8rem;
+    }
+
 }
